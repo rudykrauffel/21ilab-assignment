@@ -15,9 +15,19 @@
     <h2>Frontend Development Internship : Assignment</h2>
     <h3>Rudy Krauffel, France</h3>
     
-    <input type="email" id="mail" name="mail" required>
-    <input type="password" id="pass" name="pass" required>
-    <button type="button" class="btn-class">Login</button>
+    <form action="post.php" method="post">
+        <p>
+            <label for="mail">Your email:</label>
+            <input type="email" id="mail" name="mail" required>        
+        </p>
+        <p>
+            <label for="pass">Your password:</label>
+            <input type="password" id="pass" name="pass" required>        
+        </p>
+
+        <input type="submit" value="Login" class="btn-class"/>  
+
+    </form>
 
 
 
