@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 $servername = "localhost";
 $dbname = "backend";
 $username = "reader";
@@ -38,6 +35,6 @@ if ($result->num_rows > 0) {
    echo "Query returned nothing...";
 }
 
-// Return to first page with warning
+header('Location: login.php?login=false');
 
 ?>
