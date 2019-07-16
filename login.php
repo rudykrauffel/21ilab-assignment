@@ -15,6 +15,7 @@
     <h2>Frontend Development Internship : Assignment</h2>
     <h3>Rudy Krauffel, France</h3>
     
+
     <form action="post.php" method="post">
         <p>
             <label for="mail">Your email:</label>
@@ -29,10 +30,12 @@
 
     </form>
 
+    <?php 
+        if (isset($_GET['login']) && 'false' === $_GET['login']) {
+            echo '<p><br>Login failed! Please try again.</p>';
+        }
+    ?>
 
-
-
-    <script src=""></script>
 </body>
 
 </html>
