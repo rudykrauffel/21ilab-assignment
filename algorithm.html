@@ -35,8 +35,20 @@
             if (isNaN(input) || parseInt(input) < 0 || input == "") {
                 document.getElementById("result").textContent = "Please enter a positive integer";
             } else {
-                document.getElementById("result").textContent = "Good job";
-                
+                var wrappers = 0;
+                var money = input;
+                var candies = 0;
+
+                candies = Math.floor(money/5);
+                wrappers = candies;
+
+                while (wrappers >= 3) {
+                    wrappers -= 3;
+                    candies++;
+                    wrappers++;
+                }
+                document.getElementById("result").textContent = candies;
+
             }
         }
     </script>
