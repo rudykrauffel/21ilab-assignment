@@ -8,15 +8,18 @@
     <meta name="description" content="Assignment for a frontend development internship">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <h2>Frontend Development Internship : Assignment</h2>
-    <h3>Rudy Krauffel, France</h3>
+    <header>
+        <h2>Frontend Development Internship : Assignment</h2>
+        <h3>Rudy Krauffel, France</h3>
+
+    </header>
     
 
-    <form action="post.php" method="post">
+    <form action="post.php" method="post" class="form1">
         <p>
             <label for="mail">Your email:</label>
             <input type="email" id="mail" name="mail" required>        
