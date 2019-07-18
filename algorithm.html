@@ -6,21 +6,26 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        
-    <p>Connection successful, welcome 21iLab !</p>
+    
+    <header>
+        <h2>Connection successful, welcome 21iLab !</h2>
 
-    <p><em>You have M
-        money to buy candies that cost 5 each. Every 3 empty wrappers
-        you bring back to the store you get one extra free candy piece.
-        How many pieces of candy will you eat?</em></p>
+        <p><em>You have M
+            money to buy candies that cost 5 each. Every 3 empty wrappers
+            you bring back to the store you get one extra free candy piece.<br>
+            How many pieces of candy will you eat?</em>
+        </p>
+        <p>Enter the amount of money you have, I'll tell you how many candies you can get:</p>
+                
+    </header>
 
-    <p>Enter the amount of money you have, I'll tell you how many candies you can get:</p>
+    
 
-    <p>
-        <input type="text" oninput="findNumberOfCandies()" id="input">€ will buy you this amount of candy : <span id="result"></span>
+    <p class="form2">
+        <input type="text" oninput="findNumberOfCandies()" id="input"> € will buy you this amount of candy : <span id="result"></span>
 
     </p>
         
